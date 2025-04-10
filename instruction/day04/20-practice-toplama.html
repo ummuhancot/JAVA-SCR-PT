@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice - Toplama</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+            color: red;
+            margin: 20px;
+        }
+
+        .container{
+            width: 36rem;
+            background-color: rgba(165, 42, 42, 0.705);
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto 10px;
+            gap: 20px;
+
+        }
+        .input-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        input,button{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.21);
+            padding: 5px 10px;
+            border-radius: 10px;
+            flex: 1;
+            color:white
+        }
+        button:hover{
+            background-color: crimson;
+            transition: all .3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice - Toplama</h1>
+
+
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="num1">
+            <input type="text" id="num2">
+        </div>
+        <button type="button" title="Topla" onclick="calculateSum()">Topla</button>
+        <p id="sonuc"></p>
+    </div>
+
+
+    <script src="./js/20-practice-toplama.js"></script>
+</body>
+</html>

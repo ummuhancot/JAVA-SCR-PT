@@ -1,4 +1,3 @@
-//Atama operatörleri
 let number = 10;
 
 number -= 5;
@@ -19,3 +18,5 @@ console.log(number);
 
 number |= 10;
 console.log(number); // number = (number || 10)
+
+// Yukarıdaki atama operatörleri hem aritmetik işlem yapacak hem de işlem sonucunu değişkene atayacaktır. Bu yüzden eğer değişkenin değişmemesi gerekiyorsa aritmetik operatörler atamasız bir şekilde kullanılmalıdır.
