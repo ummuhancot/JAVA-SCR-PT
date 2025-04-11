@@ -3,7 +3,7 @@
 let sentence_with_double_quotes = "Ayşe İstanbul'da yaşıyor";
 console.log(sentence_with_double_quotes);
 
-let sentence_with_single_quotes = 'Ayşe "JavaScript" öğreniyor';
+let sentence_with_single_quotes = 'Ayşe "JavaScript" öğreniyor ';
 console.log(sentence_with_single_quotes);
 
 let firstName = "Jane";

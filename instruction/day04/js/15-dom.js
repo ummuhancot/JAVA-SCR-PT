@@ -1,5 +1,6 @@
 //============== js ile dökümana ulaşma ============
 console.log(document);
+//dom (document object model)
 //document javaScript in html e ulaşmasını saglar.
 //document(obje olduğu anlamına gelir . yazınca birseyler cıkarsa)
 
@@ -15,7 +16,7 @@ console.log(document.querySelector("ul.unordered-list > li:nth-child(2)"));
 //Aynı isimli p#para elementine ulaşmak için
 console.log(document.querySelector("p#para"))//sadece ilk karşılaştığı p#para yı getirir.
 
-const pElements= document.querySelector("p#para");
+const pElements= document.querySelectorAll("p#para");
 console.log(pElements);
 //Array elementlere dönüştürebiliyoruz 
 console.log(pElements[0]);//birinci p#para yı getirir.

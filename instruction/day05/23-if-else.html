@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+        <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+            color: red;
+            margin: 20px 0;
+        }
+        .container{
+            background-color: cornsilk;
+            width: 20rem;
+            padding: 20px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        input, button{
+            width: 100%;
+            padding: 5px 10px;
+            background-color: burlywood;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>If Else</h1>
+
+        <div class="container">
+        <h2>İndirim Hesapla</h2>
+        <input type="text" id="price">
+        <button type="button" title="Hesapla" onclick="calculate()">İndirim Hesapla</button>
+        <p class="result"></p>
+    </div>
+
+    <script src="./js/23-if-else.js"></script>
+</body>
+</html>

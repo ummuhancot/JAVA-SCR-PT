@@ -27,7 +27,7 @@ console.log(+para + vergi);
 let barcodeNumber = 9000;
 let extension = 123;
 
-console.log(String(barcodeNumber) + extension);
+console.log("string :"+String(barcodeNumber) + extension);
 // Eğer bir data tipini string'e çevirmek istiyorsak String() veya .toString() kullanılabilir.
 
 console.log("" + barcodeNumber);

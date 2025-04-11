@@ -20,7 +20,7 @@ console.log(h2Elements[1]);
 let para1El = document.querySelector("#para1");
 let firstName = "John";
 //1.kullanım
-// para1El.innerText = `Merhaba ${firstName}`;
+//para1El.innerText = `Merhaba ${firstName}`;
 //2.kullanım
 document.querySelector("#para1").innerHTML = `Merhaba ${firstName}`;
 

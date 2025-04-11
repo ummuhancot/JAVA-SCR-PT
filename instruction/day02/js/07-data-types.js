@@ -30,7 +30,7 @@ console.log(maxSafeNmber); // 9007199254740991
 
 //BIGINT
 let x = 100n;
-console.log(x); //100n
+console.log("big:"+x); //100n
 console.log(typeof x); // bigint
 
 console.log(x + 1n);
@@ -71,7 +71,7 @@ let myArray = [1, 2, 3, 4, "Beş"];
 let myNames = ["John", "Doe", false];
 console.log(myArray); //[1, 2, 3, 4, "Beş"];
 console.log(myNames); // ['John', 'Doe', false]
-console.log(myArray.length); //4
+console.log(myArray.length); //5
 console.log(typeof myArray, typeof myNames) //object object
 
 //OBJECT
