@@ -1,10 +1,8 @@
 ////DOM Manipülasyon
 //DOM Element yukarda ulaşım saglanır
-//aşağıda değiştirilir genelde 
 // DOM Element
-const h1El = document.querySelector('h1');
-let pStyles = document.querySelector('p').classList;
-
+const h1El = document.querySelector("h1"); //burda 'h1' yazılırsa hata veriyor
+let pStyles = document.querySelector("p").classList;
 
 // DOM Manipülasyon
 console.log(h1El.classList);

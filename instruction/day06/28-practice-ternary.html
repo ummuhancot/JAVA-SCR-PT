@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice - Ternary</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #333;
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+        .container{
+            width: 20rem;
+            background-color: lightcyan;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+        .radio-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin: 15px 0;
+        }
+        input#salary{
+            width: 100%;
+            background-color: transparent;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        input#salary:focus{
+            background-color: white;
+        }
+        p#result{
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Practice - Ternary</h1>
+
+    <div class="container">
+      <div class="radio-container">
+        <input
+          type="radio"
+          name="status"
+          value="working"
+          id="working"
+          oninput="setSalary()"
+        />
+        <label for="working">Çalışan</label>
+
+        <input
+          type="radio"
+          name="status"
+          value="retired"
+          id="retired"
+          oninput="setSalary()"
+        />
+        <label for="retired">Emekli</label>
+      </div>
+
+      <input type="text" placeholder="Maaşınızı giriniz..." oninput="setSalary()" name="salary" id="salary">
+
+      <p id="result"></p>
+    </div>
+
+    <script src="./js/28-practice-ternary.js"></script>
+  </body>
+</html>
