@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #num {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: right;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .button-grid button {
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s;
+        }
+
+        .button-grid button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hesap Makinesi</h1>
+        <input type="text" id="num" placeholder="0" readonly>
+
+        <div class="button-grid">
+            <button type="button" onclick="appendValue('7')">7</button>
+            <button type="button" onclick="appendValue('8')">8</button>
+            <button type="button" onclick="appendValue('9')">9</button>
+            <button type="button" onclick="setOperator('/')">/</button>
+
+            <button type="button" onclick="appendValue('4')">4</button>
+            <button type="button" onclick="appendValue('5')">5</button>
+            <button type="button" onclick="appendValue('6')">6</button>
+            <button type="button" onclick="setOperator('-')">-</button>
+
+            <button type="button" onclick="appendValue('1')">1</button>
+            <button type="button" onclick="appendValue('2')">2</button>
+            <button type="button" onclick="appendValue('3')">3</button>
+            <button type="button" onclick="setOperator('+')">+</button>
+
+            <button type="button" onclick="appendValue('0')">0</button>
+            <button type="button" onclick="appendValue('.')">.</button>
+            <button type="button" onclick="calculate()">=</button>
+            <button type="button" onclick="setOperator('*')">*</button>
+
+            <button type="button" onclick="clearInput()" style="grid-column: 1 / 5; background-color: #ff6666; color: white;">C</button>
+        </div>
+    </div>
+
+    <script src="./js/odev.js"></script>
+        
+    </script>
+</body>
+</html>
