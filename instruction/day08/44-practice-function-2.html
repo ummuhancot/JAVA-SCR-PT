@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice - Function 2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: darkcyan;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+            background-color: navy;
+            width: 24rem;
+            padding: 20px;
+            box-shadow: 0 0 5px 2px crimson;
+            margin: 20px auto;
+        }
+        input,button{
+            width: 100%;
+            background-color: lightblue;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        p{
+            background-color: lightblue;
+            color: black;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+        .asal{
+            background-color: darkgreen;
+            color: greenyellow;
+        }
+        .asal-degil{
+            background-color: darkred;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Asal Sayı Bulma Programı</h1>
+
+    <div class="container">
+        <input type="number" id="number">
+        <button type="button" title="Kontrol et" onclick="calculate()">Kontrol Et</button>
+        <p id="result">123</p>
+    </div>
+
+    <script src="./js/44-practice-function-2.js"></script>
+</body>
+</html>
