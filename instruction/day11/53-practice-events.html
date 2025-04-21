@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice - Events</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body data-bs-theme="dark" class="p-3">
+    <h1 class="text-center text-danger">Practice - Events</h1>
+
+    <div class="container">
+      <div class="mb-3">
+        <label for="midterm" class="form-label">Ara Sınav Notu</label>
+        <input type="number" id="midterm" class="form-control" name="midterm" />
+      </div>
+
+      <div class="mb-3">
+        <label for="final" class="form-label">Final Notu</label>
+        <input type="number" id="final" class="form-control" name="final" />
+      </div>
+
+      <div class="mb-3">
+        <button type="button" title="Harf Notu Hesapla" id="btnCalculate" class="btn btn-primary w-100">Harf Notumu Hesapla</button>
+      </div>
+
+      <div class="mb-3">
+        <p id="result" class="alert alert-secondary fs-5 fw-bold text-center">Harf Notu: <span>--</span></p>
+      </div>
+    </div>
+
+    <script src="./js/53-practice-events.js"></script>
+  </body>
+</html>
