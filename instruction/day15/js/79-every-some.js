@@ -32,7 +32,7 @@ console.log("----------------");
 // Array'in herhangi bir elemanın belirtilen bir şartı sağlaması durumunda true, istisnasız hiçbir elemanının şartı sağlamaması durumunda ise false döndürür.
 
 /**
- * Dizinin herhangi bir elemanının pozitif olup olmadığını döndürür
+ * Dizinin hearhangi bir elemanının pozitif olup olmadığını döndürür
  */
 function isAnyItemPositive(arr) {
   const isPositive = arr.some((item, index, array) => {
@@ -52,3 +52,19 @@ function isAnyItemPositive(arr) {
 console.log(isAnyItemPositive(numbers1));
 console.log(isAnyItemPositive(numbers2));
 console.log(isAnyItemPositive(numbers3));
+
+// Bir array içerisindeki tüm değerler 33'ü geçtiğinde true olan fonksiyonu yazınız
+
+let arr = [100, 200, 300];
+
+const checkIfGreater = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    if (!array[i] > 33) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+arr.every((item) => item > 33);
