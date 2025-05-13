@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modules</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="p-3" data-bs-theme="dark">
+    <h1 class="text-center text-danger">Modules</h1>
+
+    <div class="container mt-5 d-flex flex-column gap-3">
+      <div class="d-flex gap-3">
+        <input
+          type="number"
+          id="num1"
+          class="form-control"
+          placeholder="Sayı giriniz."
+        />
+        <input
+          type="number"
+          id="num2"
+          class="form-control"
+          placeholder="Sayı giriniz."
+        />
+      </div>
+
+      <div class="d-flex gap-3">
+        <button class="btn btn-danger w-100" id="btnSum">Toplama Hesapla</button>
+        <button class="btn btn-warning w-100" id="btnMultiply">Çarpım Hesapla</button>
+      </div>
+
+      <p class="alert alert-info text-center fs-4 fw-bold">İşlemin Sonucu:</p>
+    </div>
+
+    <script type="module" src="./js/106-modules.js"></script>
+  </body>
+</html>

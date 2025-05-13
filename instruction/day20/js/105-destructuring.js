@@ -63,6 +63,8 @@ const myArray2 = [1, 2, 3, 4, 5];
 // Eğer array destructure ederken bazı sayıları atlamak istiyorsak aşağıdaki gibi virgüllerden yararlanabiliriz.
 const [bir, , üç, , beş] = myArray2;
 
+myArray2[myArray2.length - 1] = 10; // en son elemanı almak için bir algoritma son elemanı değiştirdik
+
 console.log(bir, üç, beş);
 
 const menu = ["burger", "pizza", "milkshake", "tiramusu"];
