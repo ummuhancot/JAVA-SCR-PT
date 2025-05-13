@@ -6,6 +6,13 @@
 
 // printInfo(2);
 
+function hello(callback) {
+  callback();
+}
+hello(() => {
+  console.log("Hello");
+});
+
 function giveOrder(callback) {
   callback("Callback Argümanı");
 }
@@ -63,3 +70,8 @@ console.log(findSumOfArray);
 
 // Sonuç
 console.log(findSumOfArray([1]));
+
+// Normalde addEventListener için ikinci argüman olarak bir fonksiyon atanması gerekli, ancak atanacak fonksiyon argüman alabilmesi için bir callback içerisinde yazılmalı:
+document.addEventListener("click", () => {
+  console.log(findSumOfArray(numbers1));
+});
